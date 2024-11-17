@@ -14,7 +14,7 @@ class Race {
 	public:
 		Race(Type, double);
 		~Race();
-		std::string getName() const;
+		const std::string& getName() const;
 		Type getType() const;
 		double getDistance() const;
 		int getVehiclesCount() const;

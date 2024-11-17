@@ -37,8 +37,7 @@ bool SceneManager::checkVehicle(const Vehicle& v) {
 }
 
 bool SceneManager::checkRaceType(const Vehicle& v) {
-	if ((race->getType() == v.getType()) || race->getType() == Type::GROUND_AIR) return true;
-	return false;
+	return ((race->getType() == v.getType()) || race->getType() == Type::GROUND_AIR);
 }
 
 void SceneManager::pickRaceType() {

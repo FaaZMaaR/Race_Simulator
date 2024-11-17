@@ -7,4 +7,5 @@ int main() {
 	while (sceneManager.getScene() != Scene::EXIT) {
 		sceneManager.playScene();
 	}
+	return 0;
 }

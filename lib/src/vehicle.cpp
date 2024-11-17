@@ -2,7 +2,7 @@
 
 Vehicle::Vehicle(std::string n, double s, Type t) : name{ n }, speed{ s }, type{ t } {}
 
-std::string Vehicle::getName() const {
+const std::string& Vehicle::getName() const {
 	return name;
 }
 

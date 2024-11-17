@@ -21,7 +21,7 @@ Race::~Race() {
 	delete[] vehicles;
 }
 
-std::string Race::getName() const {
+const std::string& Race::getName() const {
 	return name;
 }
 

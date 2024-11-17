@@ -12,7 +12,8 @@ class Vehicle {
 	protected:
 		Vehicle(std::string, double, Type);
 	public:
-		std::string getName() const;
+		virtual ~Vehicle() = default;
+		const std::string& getName() const;
 		double getSpeed() const;
 		Type getType() const;
 		virtual double getTotalTime(double) const = 0;
